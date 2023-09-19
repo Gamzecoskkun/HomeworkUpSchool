@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.two.TwoFragment">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="90dp"
+        android:ems="30"
+        android:textColor="#0E0E0E"
+        android:textStyle="bold"
+        tools:text="name surname" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:hint="Enter your e-mail"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:hint="Enter your phone number"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--    <EditText-->
+    <!--        android:id="@+id/et_phone"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginHorizontal="16dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Enter your phone number"-->
+    <!--        android:inputType="phone"-->
+    <!--        android:textColorHint="#0C0C0C" />-->
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="76dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="#FF5722"
+        android:text="Next page"
+        android:textColor="#080909" />
+
+
+</LinearLayout>
